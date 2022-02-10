@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main()
+{
+    FILE *f;
+     char ch[100];
+    int n,i;
+    char c;
+    f=fopen("adc.doc","r");
+    printf("enter data:");
+    getc(ch);
+    n=strlen(ch);
+    for(i=0;i<n;i++)
+    {
+        c=ch[i];
+        fputc(c,f);
+    }
+    printf("file is created");
+    fclose(f);
+    return 0;
+}
