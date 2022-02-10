@@ -1,0 +1,23 @@
+
+#include <stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int main()
+{
+    FILE *f;
+    int n,i;
+    char c;
+    char ch[10];
+    printf("enter flies:");
+    scanf("%s",&ch);
+    f=fopen(ch,"r");
+    c=fgetc(f);
+    while(c!=EOF)
+    {
+        printf("%c",c);
+        c=fgetc(f);
+    }
+    fclose(f);
+    return 0;
+}
