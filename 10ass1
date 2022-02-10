@@ -5,13 +5,13 @@
 int main()
 {
     FILE *f;
-     char ch[100];
+    char ch[100];
     int n,i;
     char c;
-    f=fopen("adc.doc","r");
+    f=fopen("adc.doc","w");
     printf("enter data:");
-    getc(ch);
-    n=strlen(ch);
+    gets(ch);//hello
+    n=strlen(ch);//n=5
     for(i=0;i<n;i++)
     {
         c=ch[i];
